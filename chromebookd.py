@@ -43,7 +43,7 @@ def connect():
                 if count >= 2:
                         displayImage(loading)
                 try:
-                        db = MySQLdb.connect(host="127.0.0.1", db="chromebooks", user="root", passwd="halibrary131", connect_timeout=1)
+                        db = MySQLdb.connect(host="127.0.0.1", db="chromebooks", user="root", passwd="", connect_timeout=1)
                 except:
                         count += 1
                         for event in pygame.event.get():
